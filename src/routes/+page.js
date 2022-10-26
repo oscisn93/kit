@@ -1,5 +1,5 @@
 export async function load() {
-	const url = `https://pokeapi.co/api/v2/pokemon?limit=151`;
+	const url = `https://pokeapi.co/api/v2/pokemon?limit=300`;
 	const res = await fetch(url);
 	const data = await res.json();
 
