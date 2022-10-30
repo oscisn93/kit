@@ -11,7 +11,8 @@
 				pokemon.name.toLowerCase().includes(searchTerm.toLowerCase())
 			);
 		} else {
-			filteredPokemon = [...data.props];
+			// if (typeof window !== "undefined")
+				filteredPokemon = [...data.props];
 		}
 	}
 </script>
@@ -23,7 +24,7 @@
 <h1 class="test-4xl text-center my-8 uppercase">Svelte Kit Pokedex</h1>
 
 <input
-	class="w-8/12 rounded-md text-lg p-4 border-2 border-gray-200"
+	class="w-10/12 mx-auto rounded-md text-lg p-4 border-2 border-gray-200"
 	type="text"
 	bind:value={searchTerm}
 	placeholder="Search Pokemon"

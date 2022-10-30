@@ -2,7 +2,7 @@
 	import Nav from '../components/Nav.svelte';
 </script>
 
-<div class="p-8 max-w-6xl mx-auto">
+<div class="p-8 grid max-w-6xl mx-auto items-center">
 	<Nav />
 	<slot />
 </div>
